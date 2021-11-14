@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon_logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet"/>
+    <title>Contactanos</title>
+    <script src="../js/jquery-3.5.1.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+<body>
+    <header class = "formcontacto">
+        <div class="headerform">
+
+            <nav id="nav" class="nav1">
+                <div class="contenedor-nav">
+                    <div class="logo">
+                        <a href="#">
+                        <img src="../img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="enlaces" id="enlaces">
+                        <a href="../index.html" id="inicio" class="btn-header">Inicio</a>
+                        <a href="../descubre_mexico/descubre_mexico.html" id="descubre" class="btn-header">Descubre Mexico</a>
+                        <a href="../museos/museos.html" id="museos" class="btn-header">Museos</a>
+                        <a href="../excursiones/excursiones.html" id="excursiones" class="btn-header">Excursiones</a>
+                        <a href="../Eventos/eventos.html" id="eventos" class="btn-header">Eventos</a>
+                        <a href="#" id="contacto" class="btn-header">Contacto</a>
+                    </div>
+                    <div class="icono" id="open">
+                        <span>&#9776;</span>
+                    </div>
+                </div>
+            </nav>
+<!--         <input type="checkbox" class="checkbox" id="check">
+        <label class="menu" for="check">|||</label>
+            <div class="left-panel">
+            <div class="logopanel"><img src="../img/CDMXblanco.png" alt="logocdmx" ></div>
+            <div class="social-menu">
+                <ul>
+                    <li><a target="_blank" href="https://es-la.facebook.com/GobiernoCDMX/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a target="_blank" href="https://twitter.com/gobcdmx?lang=es"><i class="fa fa-twitter"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/gobiernocdmx/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/channel/UCKIVcWfT68v6yiWjbLr8uKw"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <ul>
+                <li><a href="../index.html">Inicio</a>
+                </li>
+                <li><a href="../eventos/eventos.html">Eventos</a></li>
+                <li><a href="../Puntosdeinteres/interes.html">Puntos de Interes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="cdmx"><img src="../img/CDMXblanco.png" alt="logocdmx" >
+    </div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg>
+        </div> -->
+        <h1>Contactanos</h1>
+        </header>
+    <main>
+            <div class="form_wrap">
+                <div class="cantact_info">
+                <div class="info_title">
+                    <div class="card">
+                        <img src="../img/avatar1.png" alt="avatar_contacto"/>
+                        </div>
+                    <h2>INFORMACION DE CONTACTO</h2>
+                    </div>
+                <div class="info_items">
+                    <p>brian.delvalle@davinci.edu.ar</p>
+                    <p>+54(011) 2030-4050</p>
+                </div>
+            </div>
+    
+            <form action="contactform.php" method="POST" role="form" class="form_contact">
+                <h2>Envia un mensaje</h2>
+                <div class="user_info">
+                    <label for="names">Nombres *</label>
+                    <input type="text" id="names" name="Nombre" required>
+    
+                    <label for="phone">Telefono / Celular *</label>
+                    <input type="text" id="phone" name="Telefono" required>
+    
+                    <label for="email">Correo electronico *</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <span>Seleccione el Sexo</span>
+                    <select name="sexo">
+                        <option value="seleccion">Elije tu opcion</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino" >Femenino</option>
+                        <option value="Femenino" >Transgénero</option>
+                    </select>
+
+                    <span>Motivo de su viaje<br> (Para selección multiple manten presionado ctrl)</span>
+                    <select name="motivo" multiple required>
+                        <option value="vacaciones">Vacaciones</option>
+                        <option value="laboral" >Trabajo</option>
+                        <option value="estudios" >Estudiantil</option>
+                        <option value="medico" >Médico</option>
+                        <option value="familiar" >Familiar</option>
+                    </select>
+
+                    <label for="document">Adjunte foto dni/pasaporte*</label>
+                    <input type="file" id="document" name="document" required>
+
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                    
+                    <label for="Terminos-y-condiciones">Acepto los términos y condiciones</label>
+                    <input id="Terminos-y-condiciones" type="checkbox" name="Terminos-y-condiciones" value="si" required/>
+    
+                    <input type="submit" value="Enviar Mensaje" id="btnSend">
+                </div>
+            </form>
+        </div>
+        <div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="container-footer-all">
+            <div class="container-body-footer">
+                <div class="colum1">
+                    <a target="_blank" href="https://www.cdmx.gob.mx/"><img src="../img/gobcdmx-logo.png" alt="gobiernocdmxlogo"></a>
+                </div>
+
+                <div class="colum2">
+
+                    <h3>Redes Sociales</h3>
+
+                    <div class="row">
+                        <img src="../img/icon/facebook.png">
+                        <p><a target="_blank" href="https://es-la.facebook.com/GobiernoCDMX/">Siguenos en Facebook</a></p>
+                    </div>
+                    <div class="row">
+                        <img src="../img/icon/twitter.png">
+                        <p><a target="_blank" href="https://twitter.com/gobcdmx?lang=es">Siguenos en Twitter</a></p>
+                    </div>
+                    <div class="row">
+                        <img src="../img/icon/instagram.png">
+                        <p><a target="_blank" href="https://www.instagram.com/gobiernocdmx/">Siguenos en Instagram</a></p>
+                    </div>
+                </div>
+
+                <div class="colum3">
+
+                    <h3>Información Contactos</h3>
+
+                    <div class="row2">
+                        <img src="../img/icon/house.png">
+                        <p>Av. Paseo de la Reforma 222, Juárez, Cuauhtémoc, Ciudad de México, CDMX, México</p>
+                    </div>
+
+                    <div class="row2">
+                        <img src="../img/icon/smartphone.png">
+                        <p>+52-11-322-4333</p>
+                    </div>
+
+                    <div class="row2">
+                        <img src="../img/icon/contact.png">
+                         <p>informes@cdmx.com</p>
+                    </div>
+
+                </div>
+
+            </div>
+        
+        </div>
+        <div class="container-footer">
+               <div class="footer">
+                    <div class="copyright">
+                        <p>© 2021 Todos los Derechos Reservados | <a href="">CDMX</a></p>
+                    </div>
+
+                    <div class="information">
+                        <p><a href="../museos/museos.html">Museos</a> | <a href="../excursiones/excursiones.html">Excursiones</a> | <a href="../Eventos/eventos.html">Eventos</a> | <a href="#">Contacto</a></p>
+                    </div>
+                </div>
+            </div>
+<!-- 		<div class="contenedor-footer">
+			<div class="content-foo">
+			<h3>Nombre y Apellido</h3>
+			<p>Brian Esteve del Valle</p>
+			</div>
+			<div class="content-foo">
+			<h3>Materia</h3>
+			<p>Maquetado y desarrollo Web</p>
+			</div>
+			<div class="content-foo">
+			<h3>Docente a cargo</h3>
+			<p>Mabel Garcia</p>
+			</div>
+		</div>
+		<div class="content-foo">
+		<p>Este sitio corresponde al Tp2 de la carrera de Diseño y Programacion Web de la Escuela Da Vinci</p>
+		</div>
+        <h2 class="titulo-final">&copy; 2020 - Brian Esteve del Valle. Todos los derechos reservados</h2>
+        <div class="content-foo">
+		<p><a href="mailto:brian.delvalle@davinci.edu.ar">Click para enviar mail al autor</a></p>
+		</div> -->
+	</footer>
+    <script src="../js/jquery.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+</html>
